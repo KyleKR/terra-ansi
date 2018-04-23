@@ -8,7 +8,7 @@ provider "ibm" {
 # Create an SSH key. You can find the SSH key surfaces in the SoftLayer console under Devices > Manage > SSH Keys
 resource "ibm_compute_ssh_key" "hyperledger_key" {
   label      = "hyperledger_key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDh/m1wYMp0Jv+Xm47gScnWpjWKhMhqWNjriGQCNoN8q8ZeJPzkq5xbrDdSE84WrETaggZT/JxxR6GRuj4yIljzXrBnpWcLlV5RB9BuNTaVT85XHKu+SrEnb7rX1cr5PNKR+DUQ4OxMnXyCx4zP7NhjUABO0+J1/x1htz0zxB+LsVkRYiLYo3hZ26rilkkos2+jonV62Rowsvgc96kuuBJUNipvcB9T9789AEqqICSOceY8NgBFjwA8yjA2fqRXzbJzhtZ3Hv6Wut3zcMkQoIFscMUop789pKaUUl3kPUQjOtcl+BT0xCkr6XEPwcs9qfMyxuUPdYqntIlUjntr57Sr hyperledger_dwmeetup"
+  public_key = "ssh-rsa put_your_public_ssh_key hyperledger_dwmeetup"
 }
 
 data "ibm_compute_image_template" "img_hyperledger_1" {
